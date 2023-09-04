@@ -83,7 +83,8 @@ void merge(struct Node *p,struct Node *q)
         }
 
     }
-    if()
+    if(p)last->next=p;
+    if(q)last->next=q;
     
 }
 
@@ -93,8 +94,9 @@ int main() {
     
     first = create(A, 5);
     second = create(B, 5);
+    merge(first,second);
 
-    concat(second, first);
+    
     printf("CONCATENATED\n");
     Display(third);
     printf("\n\n");
